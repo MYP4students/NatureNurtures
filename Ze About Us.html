@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> About Us </title>
+<style>
+
+h1 {
+    color: #001f08;
+    background-color: #b2d8b2;
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 20px;
+    font-family: trebuchet ms; 
+}
+
+
+#mySidenav {
+    position: fixed;
+    left: 0;
+    top: 300px; /* Adjust the top position as needed */
+    background-color: #3b703b;
+    padding-top: 20px;
+    width: 150 px;
+}
+
+#mySidenav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#mySidenav a:hover {
+    left: 0;
+
+    background-color: #001f08;
+}
+
+#mySidenav a.active {
+    background-color: #001f08;
+}
+
+.section-container {
+    text-align: right; /* Center the content */
+    margin: 100 ; /* Center horizontally */
+    max-width: 50px; /* Set maximum width */
+}
+
+image {
+    text-align: right;
+}
+
+section {
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 100px;
+    display: none;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+     text-align: center;
+
+
+    font-family: trebuchet ms;
+}
+</style>
+</head>
+<body bgcolor="e8f1e7">
+
+<div>
+<img src="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Website photos\f1.jpg" 
+width= 120px height=85px>
+</div>
+
+<b>
+<h1 style="font-size: 60px"> About Us </h1>
+</b>
+
+<div id="mySidenav" class="sidenav">
+    <a href="#whoweare">Who We Are</a>
+    <a href="#purpose">Purpose</a>
+    <a href="#goals">Goals</a>
+    <a href="#contributions"> Contributions</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
+
+<section id="whoweare">
+    <h2> Who We Are </h2>
+    <div align="center">
+    <p> In today's world, almost every decision we make has an impact on the environment.</br> But understanding which choices are most important for protecting the planet can be overwhelming. </br>That's why we, the students studying digital design in MYP 4, have come together with a mission.</br> We want to create a website that shines a light on the environmental issues we face and offers practical solutions to address them.</p>
+    <img src="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Website photos\f2.png" alt="Team Photo" align="center">
+    <p>People in the photo: Mannat Alwa, Rithanyaa TK, Rishit Nagpal, Sonakshi Chavan, Tanishka Sathe, Tushant Avudurthi<br>Our facilitator: Ms. Mridula</p>
+</div>
+</section>
+
+<section id="purpose">
+    <h2>Purpose</h2>
+    <p></br>We believe that everyone should have access to information about how to make a positive impact on the environment. </br>By sharing our knowledge and passion for sustainability through this website, we hope to empower others to take action in their own lives. </br>Whether it's reducing waste, conserving energy, or supporting eco-friendly practices, we want to inspire change and make a difference for our planet's future.</p>
+</section>
+
+<section id="goals">
+    <h2>Goals</h2>
+    <p>Our goal is to make environmental awareness and action accessible to everyone, regardless of their background <br>  or expertise. Through our website, we will provide clear and simple explanations of environmental issues, along with practical tips and <br> resources for making sustainable choices. By breaking down complex topics into easy-to-understand information, we hope to inspire and empower <br>individuals to join us in protecting the planet for future generations.
+    </p>
+</section>
+
+<section id="contributions">
+    <h2>Contributions</h2>
+    <p>We believe that collective action is key to addressing environmental challenges. That's why we invite you <br> to explore our website, learn more about the issues, and discover ways to make a positive impact in your daily life. Whether <br>it's through small changes in your habits or advocating for broader systemic change, every <br> action counts. Together, we can create a more sustainable and resilient world for ourselves and for future generations to come.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>You can contact us via Gmail:<br>
+        Mannat: mannatalwa@bkfbliss.org<br>
+        Rithanyaa: rithanyakumar@bkfbliss.org<br>
+        Rishit: rishit.nagpal@bkfbliss.org<br>
+        Sonakshi: sonakshi.chavan@bkfbliss.org<br>
+        Tanishka: tanishka.sathe@bkfbliss.org<br>
+        Tushant: tushant.avudurthi@bkfbliss.org</p>
+</section>
+
+<script>
+    
+    var navLinks = document.querySelectorAll('#mySidenav a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+           
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            
+            this.classList.add('active');
+
+            var targetSectionId = this.getAttribute('href').substring(1); 
+            var targetSection = document.getElementById(targetSectionId);
+            if (targetSection) {
+             
+                var sections = document.querySelectorAll('section');
+                sections.forEach(function(section) {
+                    section.style.display = 'none';
+                });
+                
+                targetSection.style.display = 'block';
+                
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

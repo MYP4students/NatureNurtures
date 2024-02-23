@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-color: #90EE90;
+}
+
+h3 {
+	color: white;
+	background-color: mediumseagreen;
+}
+
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #38444d;
+		height: 50px;
+		font-family: Courier New, monospace;
+	}
+	.nav-container {
+		width: 60%; /* Adjust the width as needed */
+		margin: 0 auto; /* Center the navigation bar */
+	}
+	li {
+		float: left;
+	}
+	li a, .dropbtn {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	li a:hover, .dropdown:hover .dropbtn {
+	background-color: #00ced1;
+	font-size: 120%;
+	}
+
+
+
+li.dropdown {
+
+  display: inline-block;
+
+}
+
+
+
+
+.dropdown-content {
+
+  display: none;
+
+  position: absolute;
+
+  background-color: #f9f9f9;
+
+  min-width: 160px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  z-index: 1;
+
+}
+
+
+
+
+.dropdown-content a {
+
+  color: black;
+
+  padding: 12px 16px;
+
+  text-decoration: none;
+
+  display: block;
+
+  text-align: left;
+
+}
+
+
+
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+
+
+
+.dropdown:hover .dropdown-content {
+
+  display: block;
+
+}
+
+h2, p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.center-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.center-image img {
+  max-width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="sear-bar">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+
+<div class="nav-container">
+
+<ul>
+
+  	<li> <a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\Home Page.html"> Home</a></li>
+  	<li> <a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\Ze About Us.html"> About Us</a></li>
+  
+	<li class="dropdown">
+	<a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\Recent Projects.html">Recent Projects</a>
+
+   <div class="dropdown-content">
+
+      <a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\MYP3 Paper Bag Project.html"> MYP3 Paper bag Project </a>
+      <a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\MYP1 Compost Making.html">MYP1 Compost making</a>
+      <a href="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Code\PYP Plantation Drive.html">PYP Plantation drive</a>
+
+    </div>
+
+  </li>
+
+</ul>
+
+  <h2>Welcome to nature nurtures</h2>
+	<h3><marquee>There is no you or I, There is only us</marquee></h2>
+  <p>Save the planet
+    Play a role in saving our planet by lowering your carbon emissions. <br>
+    Each environmentally-conscious home upgrade makes a difference, be it solar panels, heat pumps, new double-glazed windows, or replacing your old boiler. We aim to reduce price and knowledge barriers, making green choices easy, stress-free, and cost-effective. <br>
+    Save energy, save on bills, and help save our planet.</p>
+ 
+  <!-- Add the image -->
+  <div class="center-image">
+    <img src="C:\Users\rnagp\Desktop\Digital Design\MYP4 DD U3 SA\Website photos\e1.png" style="width:75%">
+  </div>
+</div>
+
+<div class="icon-bar">
+  <!-- Add YouTube icon -->
+  <a href="#" class="fa fa-youtube"></a>
+  <!-- Your existing social icons -->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+</div>
+
+</body>
+</html>
